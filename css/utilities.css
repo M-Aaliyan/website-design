@@ -49,7 +49,7 @@
 
 .bg-dark, 
 .btn-dark {
-    background-color: var(--dark-color);
+    background-image: var(--dark-color);
     color: #fff;
 }
 

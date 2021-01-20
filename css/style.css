@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root{
-    --primary-color:  #047aed;
+    --primary-color:  linear-gradient(to bottom right, red, #ffa700);
     --secondary-color:  #1c3fa8;
-    --dark-color: #002240;
+    --dark-color: linear-gradient(to bottom right, black, grey);
     --light-color: #f4f4f4;
     --success-color: #5cb85c;
     --error-color: #d9534f;
@@ -56,7 +56,7 @@ code, pre {
 
 /*navbar*/
 .navbar{
-    background-color: var(--primary-color);
+    background-image: var(--primary-color);
     color: #fff;
     height: 70px;
 }
@@ -81,8 +81,7 @@ code, pre {
 /*Showcase*/
 .showcase{
     height: 550px;
-    background-color: var(--primary-color);
-    color: #fff;
+    color: #333;
     position: relative;
     border-radius: 0 0 30% 30%;
 }
@@ -167,6 +166,7 @@ code, pre {
 }
 
 /* Cloud */
+
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
@@ -252,6 +252,10 @@ code, pre {
     margin: 0px 10px;
 }
 
+.footer {
+    background-image: var(--primary-color);
+}
+
 /* Animations */
 @keyframes slideInFromLeft {
     0% {
@@ -310,7 +314,7 @@ code, pre {
 
     .showcase {
         height: auto;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 10% 10%;
     }
 
     .showcase-text {
